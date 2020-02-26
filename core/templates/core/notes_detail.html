@@ -1,4 +1,9 @@
 {% extends 'base.html' %}
 {% block content %}
-<dl><dt>{{note.title}}</dt><dd>{{note.body}}</dd></dl>
+<a href="{% url 'notes_list' %}">Home</a>
+<dl>
+  <dt>{{note.title}}</dt>
+  <dd>{{note.body}}</dd>
+  <dd>Created at: {{note.created_at}}</dd>
+</dl>
 {% endblock %}
