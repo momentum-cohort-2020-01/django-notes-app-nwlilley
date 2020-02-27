@@ -4,6 +4,8 @@
     <h2>New note</h2>
     <form method="POST" class='note-form'>{% csrf_token %}
         {{ form.as_p }}
-        <button type="submit">Update</button>
+        <button type="submit">Save</button>
     </form>
 {% endblock %}
+
+

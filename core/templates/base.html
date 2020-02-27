@@ -1,15 +1,21 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   {% block title %}<title>Notes</title>{% endblock %}
+  
   <link rel="stylesheet" href="https://cdn.shoelace.style/1.0.0-beta.25/shoelace.css">
+  <link rel='stylesheet' type='text/css' href= "{% static 'style.css' %}">
+ 
+  <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
 <body>
     
-    <h1>NOTES NOTES NOTES</h1>
+    <h1 id='header'><em>NOPES</em></h1>
     <!-- <a href="{% url 'note_new' %}">FORM GO HERE
     </a> -->
     {% block content %} {% endblock %}

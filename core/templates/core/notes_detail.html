@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+
 {% block content %}
 <a href="{% url 'notes_list' %}">Home</a>
 <dl>
@@ -6,4 +7,7 @@
   <dd>{{note.body}}</dd>
   <dd>Created at: {{note.created_at}}</dd>
 </dl>
+<a href="{% url 'note_edit' pk=note.pk %}" class="button">Edit</a>
+<a href="{% url 'note-delete' pk=note.pk %}" class="button button-danger">Delete</a>
+
 {% endblock %}
